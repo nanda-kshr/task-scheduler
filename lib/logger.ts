@@ -26,9 +26,7 @@ class Logger {
   }
 
   public debug(message: string, meta?: any): void {
-    if (process.env.NODE_ENV !== 'production') {
       console.log(this.format('debug', message, meta));
-    }
   }
 }
 
